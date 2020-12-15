@@ -19,7 +19,7 @@ const BookmarksService = {
         })
     },
     deleteBookmark(knex, id) {
-        return knex 
+        return knex('bookmarks') 
         .where({id})
         .delete()
     },
